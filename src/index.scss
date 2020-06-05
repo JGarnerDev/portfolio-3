@@ -1,0 +1,45 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/functions";
+// Views 
+@import './styles/components/AboutMe';
+@import './styles/components/Blog';
+@import './styles/components/Home';
+@import './styles/components/Nav';
+@import './styles/components/Projects';
+// Microcomponents
+html,
+body {
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+html,
+body,
+#root {
+    height: 100vh;
+    background: $primary-color;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 20px 20px 20px;
+    z-index: 1;
+    font-weight: 600;
+    height: 76vh;
+    @media (max-width: $breakpoint-md) {
+        margin-top: 80px;
+    }
+}
+
+h1 {}

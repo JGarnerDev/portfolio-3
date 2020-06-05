@@ -1,0 +1,44 @@
+#AboutMe {
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    flex-direction: column;
+    h2 {
+        margin-top: 20px;
+    }
+    #passions-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        .passion {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            width: 45%;
+            margin: 10px 0px 10px 0px;
+            @media (max-width: $breakpoint-md) {
+                min-width: 100%;
+                min-height: 200px;
+            }
+            .graphic-wrapper {
+                max-width: 100px;
+            }
+            img {
+                width: 100%;
+            }
+            .textbox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background: white;
+                border-radius: 10px;
+                height: 100%;
+                p {
+                    padding: 0 0 0 10px;
+                    height: 40%;
+                }
+            }
+        }
+    }
+}

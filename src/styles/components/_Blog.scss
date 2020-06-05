@@ -1,0 +1,39 @@
+#Blog {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-top: 100px;
+    .blogpost {
+        margin-bottom: 10px;
+        padding: 5px;
+        max-width: 90%;
+        background: white;
+        outline: 1px solid black;
+        .blogpost-header {
+            line-height: 1em;
+            padding: 5px 10px 5px 10px;
+            background: $tertiary-color;
+            .blogpost-title {
+                margin: 0;
+                padding: 0;
+            }
+            .blogpost-keywords {
+                width: 100%;
+                color: $accent-color;
+                small {
+                    margin: 0 5px 0 0;
+                    font-weight: 700;
+                }
+            }
+            .blogpost-date {
+                font-weight: 700;
+                font-style: italic;
+            }
+        }
+        .blogpost-content {
+            margin: 5px;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+    }
+}
