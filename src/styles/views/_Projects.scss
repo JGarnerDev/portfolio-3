@@ -1,0 +1,30 @@
+#Projects {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 0 0 0;
+    width: 100%;
+    height: auto;
+    #projects-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        margin-top: 20px;
+        width: 90%;
+        height: 100%;
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            flex-grow: 1;
+            width: 30%;
+            height: 300px;
+            margin: 10px;
+            background: white;
+            @media (max-width: $breakpoint-sm) {
+                width: 100%;
+            }
+        }
+    }
+}
