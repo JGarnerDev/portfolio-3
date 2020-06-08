@@ -1,96 +1,50 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from "react-router-dom";
 
-import Nav from './components/Nav'
-import Home from './components/Home'
-import AboutMe from './components/AboutMe'
+import "./firebase";
 
-// Blog Stuff
+import Nav from "./components/Nav";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+import Blog from "./components/Blog/Blog";
+import Projects from "./components/Projects/Projects";
+import Project from "./components/Projects/Project";
 
-import Blog from './components/Blog/Blog'
+import "./index.scss";
+import { firebaseWIUT, firebaseCodeChallenges } from "./firebase";
 
-// Project Stuff
-import Projects from './components/Projects/Projects'
+function App() {
+	return (
+		<Router>
+			<React.Fragment>
+				<Nav />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/projects" component={Projects} />
+					<Route exact path="/projects/:id" component={Project} />
 
-import './index.scss'
-
-let WhatImUpTo = [
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. '
-  },
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!'
-  },
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!'
-  },
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!'
-  },
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!'
-  },
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!'
-  },
-  {
-    title: 'Gopher',
-    keywords: ['JavaScript', 'Algorithm'],
-    date: 'April 5th, 2020',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta quos rem quasi aliquam ex voluptate autem totam sapiente magni eos voluptas, quo ipsam non. Labore cum laborum pariatur ad!'
-  }
-]
-
-function App () {
-  return (
-    <Router>
-      <React.Fragment>
-        <Nav />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/projects' component={Projects} />
-
-          <Route
-            exact
-            path='/blog/wiut'
-            component={() => <Blog blogs={WhatImUpTo} />}
-          />
-          <Route
-            exact
-            path='/blog/codechallenges'
-            component={() => <Blog blogs={WhatImUpTo} />}
-          />
-          <Route exact path='/aboutme' component={AboutMe} />
-        </Switch>
-      </React.Fragment>
-    </Router>
-  )
+					<Route
+						exact
+						path="/blog/wiut"
+						component={() => <Blog retrieveFrom={firebaseWIUT} />}
+					/>
+					<Route
+						exact
+						path="/blog/codechallenges"
+						component={() => <Blog retrieveFrom={firebaseCodeChallenges} />}
+					/>
+					<Route exact path="/aboutme" component={AboutMe} />
+					<Redirect from="*" to="/" />
+				</Switch>
+			</React.Fragment>
+		</Router>
+	);
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,17 +1,18 @@
 #Blog {
     flex-direction: column;
     height: auto;
-    width: auto;
-    margin-top: 100px;
+    width: 90vw;
+    margin: 100px 5vw 20px 5vw;
     .blogpost {
         margin-bottom: 10px;
-        padding: 5px;
-        max-width: 90%;
+        max-width: 1000px;
+        padding: 5px 5px 20px 5px;
         background: white;
         outline: 1px solid black;
         .blogpost-header {
             line-height: 1em;
             padding: 5px 10px 5px 10px;
+            margin-bottom: 10px;
             background: $tertiary-color;
             .blogpost-title {
                 margin: 0;
@@ -30,10 +31,26 @@
                 font-style: italic;
             }
         }
-        .blogpost-content {
+        .blogpost-text {
             margin: 5px;
-            word-break: break-all;
             word-wrap: break-word;
+        }
+        .img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 100%;
+            @media (max-width: $breakpoint-md) {
+                height: 45vh;
+            }
+        }
+        .blog-img {
+            height: 100%;
+            width: auto;
+            @media (max-width: $breakpoint-md) {
+                height: 100%;
+            }
         }
     }
 }

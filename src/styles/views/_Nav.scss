@@ -11,6 +11,9 @@ nav {
             width: 100%;
         }
     }
+    .dropdown-backdrop {
+        position: static;
+    }
     li,
     a,
     .nav-item,

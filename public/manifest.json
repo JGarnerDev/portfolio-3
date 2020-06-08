@@ -1,5 +1,4 @@
 {
-    "short_name": "JG Front-End Dev Portfolio",
     "name": "Jeffrey Garner's Front-End Web Development Portfolio",
     "icons": [{
             "src": "/public/flavicons/android-icon-36x36.png",
@@ -38,7 +37,7 @@
             "density": "4.0"
         }
     ],
-    "start_url": ".",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"

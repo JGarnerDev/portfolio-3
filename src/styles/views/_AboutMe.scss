@@ -1,44 +1,56 @@
 #AboutMe {
-    margin-left: 6.25%;
-    margin-right: 6.25%;
-    flex-direction: column;
-    h2 {
-        margin-top: 20px;
-    }
-    #passions-container {
+    width: 90%;
+    margin-left: 5%;
+    #intro {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        height: 100%;
-        width: 100%;
-        .passion {
+        align-items: center;
+        text-align: center;
+        height: auto;
+        min-height: 70vh;
+        background: white;
+        margin: 0px 20px 10px 10px;
+        padding: 20px;
+        border-radius: 20px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        @media (max-width: $breakpoint-md) {
+            margin: 10px;
+        }
+        p {
+            max-width: 90%;
+        }
+    }
+    #hobbies-container {
+        height: auto;
+        background: white;
+        padding: 20px 5px 20px 5px;
+        text-align: center;
+        border-radius: 20px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        @media (max-width: $breakpoint-lg) {
             display: flex;
-            align-items: center;
-            flex-grow: 1;
-            width: 45%;
-            margin: 10px 0px 10px 0px;
-            @media (max-width: $breakpoint-md) {
-                min-width: 100%;
-                min-height: 200px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            height: auto;
+            width: 90%;
+            margin-bottom: 20px;
+            padding: 5px;
+            .hobby {
+                width: 40%;
+                margin: 5px;
             }
-            .graphic-wrapper {
-                max-width: 100px;
-            }
-            img {
+            h6 {
                 width: 100%;
             }
-            .textbox {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background: white;
-                border-radius: 10px;
-                height: 100%;
-                p {
-                    padding: 0 0 0 10px;
-                    height: 40%;
-                }
-            }
+        }
+        .hobby-text {
+            font-size: 0.8em;
+            margin: 0 0 10px 0;
         }
     }
 }
