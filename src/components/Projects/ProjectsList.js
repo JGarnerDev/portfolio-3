@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import logo from "../../img/logo.png";
 import { NavLink } from "react-router-dom";
 
 let largerTitle = {

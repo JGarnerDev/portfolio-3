@@ -9,11 +9,10 @@
         flex-wrap: wrap-reverse;
         justify-content: flex-start;
         margin-top: 20px;
-        min-width: 90vw;
+        max-width: 90%;
         padding-bottom: 5%;
         background-color: $primary-color-darker;
         background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         border-radius: 20px;
         border: 4px solid $tertiary-color;
         -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
