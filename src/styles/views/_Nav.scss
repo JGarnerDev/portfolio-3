@@ -1,8 +1,5 @@
 nav {
-    position: -webkit-sticky !important;
-    position: sticky !important;
-    top: 0;
-    z-index: 2;
+    z-index: 1;
     background: $primary-color-darker;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
     .logo-wrapper {
@@ -11,26 +8,36 @@ nav {
             width: 100%;
         }
     }
-    .dropdown-backdrop {
-        position: static;
-    }
-    li,
-    a,
-    .nav-item,
-    li:hover {
-        font-size: 1.1em;
-        font-weight: 700;
-        text-decoration: none !important;
-        .dropdown-item:hover {
+    .navbar-collapse {
+        position: absolute;
+        width: 200px;
+        top: 67px;
+        right: 10px;
+        background: $primary-color-darker;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.5);
+        a,
+        li {
+            background: $primary-color-darker;
             font-weight: 700;
-            background-color: $tertiary-color;
+            padding-left: 10px;
+        }
+        a:hover,
+        li:hover {
+            text-decoration: none;
+            color: $tertiary-color !important;
+        }
+        .dropdown-menu.show {
+            padding: 0;
+            border: 0;
+            a {
+                background: $primary-color;
+            }
         }
     }
-    .dropdown-menu {
-        background: $primary-color;
+    .navbar-collapse.collapse {
+        right: 9999px;
     }
-    .navbar-toggler {
-        background: $primary-color;
-        border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    .navbar-collapse.collapse.show {
+        right: 10px;
     }
 }

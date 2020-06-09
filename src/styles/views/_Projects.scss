@@ -4,13 +4,11 @@
     justify-content: flex-start;
     align-self: center;
     margin: 20px 0px 20px 0px;
-    width: 90%;
     #projects-container {
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: flex-start;
         margin-top: 20px;
-        min-height: 70vh;
         min-width: 90vw;
         padding-bottom: 5%;
         background-color: $primary-color-darker;
@@ -23,6 +21,7 @@
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
         @media (max-width: $breakpoint-md) {
             padding-bottom: 100px;
+            width: 95%;
         }
         .project {
             margin: 2%;
@@ -39,12 +38,12 @@
                 color: white;
             }
             h1 {
-                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.288), transparent);
+                background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.288), transparent);
             }
             p {
                 width: 200px;
                 padding-top: 10px;
-                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.568));
+                background-image: linear-gradient( to top, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.568));
             }
             .project-content {
                 display: flex;

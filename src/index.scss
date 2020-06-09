@@ -2,25 +2,26 @@
 @import "./styles/mixins";
 @import "./styles/variables";
 @import "./styles/functions";
-// Views 
-@import './styles/views/AboutMe';
-@import './styles/views/Blog';
-@import './styles/views/Home';
-@import './styles/views/Nav';
-@import './styles/views/Projects';
+// Views
+@import "./styles/views/AboutMe";
+@import "./styles/views/Blog";
+@import "./styles/views/Home";
+@import "./styles/views/Nav";
+@import "./styles/views/Projects";
 // Microcomponents
 html,
 body,
 #root,
 #root>div {
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         display: none;
     }
     height: auto;
-    min-height: 100%;
+    min-height: 100vh;
     background: linear-gradient(to bottom, $primary-color, $primary-color-darker);
     background-size: 100%;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 #root {
@@ -30,9 +31,9 @@ body,
 
 main {
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     font-weight: 600;
     @media (max-width: $breakpoint-sm) {
         align-items: flex-start;

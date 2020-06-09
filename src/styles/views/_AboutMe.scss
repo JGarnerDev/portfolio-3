@@ -1,7 +1,9 @@
 #AboutMe {
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 50px;
+    height: auto;
+    min-height: fit-content;
     #intro {
         display: flex;
         flex-direction: column;
@@ -9,7 +11,7 @@
         align-items: center;
         text-align: center;
         height: auto;
-        min-height: 70vh;
+        max-height: 70%;
         background: white;
         margin: 0px 20px 10px 10px;
         padding: 20px;
@@ -18,7 +20,7 @@
         -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         @media (max-width: $breakpoint-lg) {
-            margin: 0px 5% 20px 5%;
+            margin: 0px 5px 20px 5px;
         }
         p {
             max-width: 90%;
@@ -26,6 +28,7 @@
     }
     #hobbies-container {
         height: auto;
+        max-height: 70%;
         background: white;
         padding: 20px 5px 20px 5px;
         text-align: center;
