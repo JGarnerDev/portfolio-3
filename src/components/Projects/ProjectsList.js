@@ -40,6 +40,7 @@ export default class ProjectsList extends Component {
 					backgroundSize: "auto 80% ",
 					flexGrow: 2,
 					height: "300px",
+					padding: "0px 150px 0px 150px",
 				};
 				let projectLonelyStyle = {
 					backgroundImage: `url(${project.img})`,
@@ -48,7 +49,7 @@ export default class ProjectsList extends Component {
 					backgroundSize: "auto 80% ",
 					flexGrow: 2,
 					height: "300px",
-					marginBottom: "15%",
+					marginTop: "15%",
 					padding: "0px 20% 0px 20%",
 				};
 				let projectLink = `/projects/${project.name}`;
@@ -68,7 +69,7 @@ export default class ProjectsList extends Component {
 							<NavLink key={i} to={projectLink} className="project-content">
 								<h1 style={largerTitle}>{project.name}</h1>
 
-								<p>{project.desc}</p>
+								<p style={smallerDesc}>{project.desc}</p>
 							</NavLink>
 						</div>
 					);
