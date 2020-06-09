@@ -1,6 +1,7 @@
 #AboutMe {
-    width: 90%;
-    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
     #intro {
         display: flex;
         flex-direction: column;
@@ -16,8 +17,8 @@
         -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-        @media (max-width: $breakpoint-md) {
-            margin: 10px;
+        @media (max-width: $breakpoint-lg) {
+            margin: 0px 5% 20px 5%;
         }
         p {
             max-width: 90%;

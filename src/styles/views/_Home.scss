@@ -1,15 +1,12 @@
 #Home {
     margin-left: 5%;
     max-width: 90%;
-    @media (max-width: $breakpoint-md) {
-        margin-top: 30px;
-        line-height: 1.2em;
-    }
+    height: 90vh;
+    @media (max-width: $breakpoint-md) {}
     #intro {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
         #picture-container {
             display: flex;
             flex-direction: column;

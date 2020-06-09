@@ -9,6 +9,9 @@ let largerTitle = {
 let smallerTitle = {
 	fontSize: "1em",
 };
+let largerDesc = {
+	fontSize: "1em",
+};
 let smallerDesc = {
 	fontSize: "0.7em",
 };
@@ -26,34 +29,58 @@ export default class ProjectsList extends Component {
 					backgroundImage: `url(${project.img})`,
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
-					backgroundSize: "auto 60% ",
+					backgroundSize: "auto 80% ",
+					flexGrow: 1,
+					height: "300px",
+				};
+				let projectBigStyle = {
+					backgroundImage: `url(${project.img})`,
+					backgroundPosition: "center",
+					backgroundRepeat: "no-repeat",
+					backgroundSize: "auto 80% ",
+					flexGrow: 2,
+					height: "300px",
+				};
+				let projectLonelyStyle = {
+					backgroundImage: `url(${project.img})`,
+					backgroundPosition: "center",
+					backgroundRepeat: "no-repeat",
+					backgroundSize: "auto 80% ",
+					flexGrow: 2,
+					height: "300px",
+					marginBottom: "15%",
+					padding: "0px 20% 0px 20%",
 				};
 				let projectLink = `/projects/${project.name}`;
-				if (i === projects.length - 1 && projects.length !== 3) {
+				if (projects.length === 1) {
 					return (
-						<NavLink
-							className="project"
-							key={i}
-							style={projectStyle}
-							to={projectLink}
-						>
-							<h1 style={largerTitle}>{project.name}</h1>
+						<div className="project" style={projectLonelyStyle}>
+							<NavLink className="project-content" key={i} to={projectLink}>
+								<h1 style={largerTitle}>{project.name}</h1>
 
-							<p>{project.desc}</p>
-						</NavLink>
+								<p style={largerDesc}>{project.desc}</p>
+							</NavLink>
+						</div>
+					);
+				} else if (i === projects.length - 1 && projects.length !== 3) {
+					return (
+						<div className="project" style={projectBigStyle}>
+							<NavLink key={i} to={projectLink} className="project-content">
+								<h1 style={largerTitle}>{project.name}</h1>
+
+								<p>{project.desc}</p>
+							</NavLink>
+						</div>
 					);
 				} else {
 					return (
-						<NavLink
-							className="project"
-							key={i}
-							style={projectStyle}
-							to={projectLink}
-						>
-							<h1 style={smallerTitle}>{project.name}</h1>
+						<div className="project" style={projectStyle}>
+							<NavLink className="project-content" key={i} to={projectLink}>
+								<h1 style={smallerTitle}>{project.name}</h1>
 
-							<p style={smallerDesc}>{project.desc}</p>
-						</NavLink>
+								<p style={smallerDesc}>{project.desc}</p>
+							</NavLink>
+						</div>
 					);
 				}
 			});
