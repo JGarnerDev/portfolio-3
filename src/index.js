@@ -19,6 +19,8 @@ import Project from "./components/Projects/Project";
 import "./index.scss";
 import { firebaseWIUT, firebaseCodeChallenges } from "./firebase";
 
+require("dotenv").config();
+
 function App() {
 	return (
 		<Router>
