@@ -51,13 +51,8 @@
             }
         }
         .blog-img {
-            width: 90%;
-            max-width: 600px;
-            height: auto;
-            max-height: 600px;
-            @media (max-width: $breakpoint-md) {
-                height: 85%;
-            }
+            height: 90%;
+            width: auto;
         }
         h3 {
             margin: 0;
