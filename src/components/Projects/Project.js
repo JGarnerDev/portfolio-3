@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { DualRing } from "react-spinners-css";
 import { firebaseProjects } from "../../firebase";
 
 class Project extends Component {
@@ -26,6 +26,15 @@ class Project extends Component {
 					return project.name === this.props.match.params.id;
 				})[0],
 			});
+			let displayedProject = { ...this.state.displayedProject };
+			displayedProject.keywords = displayedProject.keywords
+				.split(" ")
+				.map((keyword) => {
+					keyword = "/" + keyword;
+					return <small>{keyword}</small>;
+				});
+
+			this.setState({ displayedProject });
 		});
 	};
 
@@ -36,15 +45,55 @@ class Project extends Component {
 	render() {
 		if (this.state.displayedProject !== "") {
 			let project = this.state.displayedProject;
-			return (
-				<div>
-					<div>{project.img}</div>
-					<div>{project.name}</div>
-					<div>{project.desc}</div>
-					<div>{project.keywords}</div>
+			let links = () => {
+				if (project.link === "") {
+					return (
+						<div id="links">
+							<a href={project.gitlink}>See it on GitHub!</a>
+						</div>
+					);
+				} else {
+					return (
+						<div id="links">
+							<a href={project.link} id="link-hosted">
+								See it in action!
+							</a>
+							<a href={project.gitlink} id="link-git">
+								See it on GitHub!
+							</a>
+						</div>
+					);
+				}
+			};
+			let text = () => {
+				if (project.review === "") {
+					return (
+						<div id="viewProject-text">
+							<div id="desc">{project.desc}</div>
+						</div>
+					);
+				} else {
+					return (
+						<div id="viewProject-text">
+							<div id="desc">{project.desc}</div>
+							<hr />
+							<div id="review">{project.review}</div>
+						</div>
+					);
+				}
+			};
 
-					<div>{project.link}</div>
-					<div>{project.gitlink}</div>
+			return (
+				<div id="ViewProject">
+					<h2 id="viewProject-title">{project.name}</h2>
+					<div id="viewProject-container">
+						<img id="viewProject-img" src={project.img} alt="" />
+						<div id="meta">
+							<div id="keywords">{project.keywords}</div>
+							{links()}
+						</div>
+						{text()}
+					</div>
 				</div>
 			);
 		} else {

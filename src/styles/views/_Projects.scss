@@ -61,3 +61,159 @@
         }
     }
 }
+
+#ViewProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+    max-height: 60vh;
+    #viewProject-title {
+        background: $tertiary-color;
+        width: 90%;
+        max-width: 1000px;
+        margin: 0;
+        padding: 5px 5% 5px 5%;
+        border: 4px solid $tertiary-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+        font-weight: 700;
+        @media (max-width: $breakpoint-md) {
+            font-size: 1.5em;
+        }
+    }
+    #viewProject-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5% 20px 5%;
+        @media (min-width: $breakpoint-lg) {
+            padding: 20px 100px 20px 100px;
+        }
+        width: 90%;
+        max-width: 1000px;
+        //
+        background-color: $primary-color-darker;
+        background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 4px solid $tertiary-color;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,
+        0,
+        0,
+        0.5);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,
+        0,
+        0,
+        0.5);
+        box-shadow: 5px 5px 5px 0px rgba(0,
+        0,
+        0,
+        0.5);
+        //
+        #viewProject-img {
+            width: auto;
+            max-height: 40vh;
+            //
+            background-color: $primary-color-darker;
+            background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+            border-radius: 20px;
+            border: 4px solid $tertiary-color;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            //
+        }
+        #meta {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            min-width: 300px;
+            margin-top: 20px;
+            //
+            background-color: $primary-color-darker;
+            background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+            border-radius: 10px;
+            border: 5px solid $tertiary-color;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            //
+            #keywords {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                min-height: 40px;
+                color: $accent-color;
+                small {
+                    font-weight: 700;
+                    min-width: 50px;
+                }
+            }
+            #links {
+                display: flex;
+                justify-content: space-evenly;
+                border: 5px solid $tertiary-color;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                background-color: $tertiary-color;
+                a {
+                    background-color: $primary-color-darker;
+                    flex-grow: 1;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $tertiary-color;
+                    border: 2px solid $accent-color;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+                a:hover {
+                    color: $accent-color;
+                }
+                #link-hosted {
+                    margin-right: 5px;
+                    border: 2px solid $accent-color;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 0px;
+                }
+                #link-git {
+                    border: 2px solid $accent-color;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 0px;
+                }
+            }
+        }
+        #viewProject-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            font-weight: 700;
+            color: $tertiary-color;
+            //
+            background-color: $primary-color-darker;
+            background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+            border-radius: 10px;
+            border: 5px solid $tertiary-color;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            //
+            #desc {
+                text-align: center;
+                background: $primary-color;
+                width: 90%;
+                margin: 10px 0px 10px 0px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #review {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
