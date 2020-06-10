@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { DualRing } from "react-spinners-css";
 import { firebaseProjects } from "../../firebase";
 
 class Project extends Component {
@@ -49,16 +48,32 @@ class Project extends Component {
 				if (project.link === "") {
 					return (
 						<div id="links">
-							<a href={project.gitlink}>See it on GitHub!</a>
+							<a
+								href={project.gitlink}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								See it on GitHub!
+							</a>
 						</div>
 					);
 				} else {
 					return (
 						<div id="links">
-							<a href={project.link} id="link-hosted">
+							<a
+								href={project.link}
+								id="link-hosted"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								See it in action!
 							</a>
-							<a href={project.gitlink} id="link-git">
+							<a
+								href={project.gitlink}
+								id="link-git"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								See it on GitHub!
 							</a>
 						</div>

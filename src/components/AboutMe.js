@@ -5,6 +5,7 @@ export default function AboutMe() {
 		<main id="AboutMe" className="row ">
 			<div id="intro" className="col-lg-8">
 				<h3>A little about myself</h3>
+				<hr />
 				<p>
 					Up until 2019, I never considered web development. I had been a cook,
 					a Liberal Arts student, a musician in an 80's power metal band, a

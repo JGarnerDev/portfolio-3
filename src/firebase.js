@@ -28,6 +28,16 @@ today = mm + "/" + dd + "/" + yyyy;
 // FOR CODE CHALLENGE BLOG POST
 
 // let codeChallenges = [
+// {
+// 	name: "Encrypt this!",
+// 	date: today,
+// 	keywords: "Algorithm Encription JavaScript Completed",
+// 	content: [
+// 		"https://i.imgur.com/5VtLhWP.png",
+// 		"https://i.imgur.com/Ugnt0jr.png",
+// 		"",
+// 	]
+// }
 
 // ];
 
@@ -37,18 +47,24 @@ today = mm + "/" + dd + "/" + yyyy;
 
 // Blog post model:
 
-// {
-// 	name: "Encrypt this!",
-// 	date: today,
-// 	keywords: "Algorithm Encription JavaScript Completed",
-// 	content: [
-// 		"https://i.imgur.com/5VtLhWP.png",
-// 		"https://i.imgur.com/Ugnt0jr.png",
-// 		"<p>Not too much to talk about here - the function takes the text argument (a string of a number of words), splits the string into an array of word strings, splits the word strings into an array of characters, switches the first and last character (if the specified conditions are met) of each word array and then converts the first character to ASCII code, joins the word array into a string,  assigns it to it's corresponding index in the new text array (made by the map method), then the function returns the new joined text array.</p>",
-// 	],
-// }
-
 // FOR WIUT BLOG POST
+
+// let wiut = [
+// 	{
+// 		name: "Offering my services to an adapting business",
+// 		date: today,
+// 		keywords: "PHP Wordpress",
+// 		content: [
+// 			"https://i.imgur.com/p8NVOA6.png",
+// 			"https://i.imgur.com/Y2wRglB.png",
+// 			"",
+// 		],
+// 	},
+// ];
+
+// wiut.forEach((blogpost) => {
+// 	firebaseDB.ref("wiut").push(blogpost);
+// });
 
 export {
 	firebase,
