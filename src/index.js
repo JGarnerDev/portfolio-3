@@ -36,12 +36,15 @@ function App() {
 						path="/blog/wiut"
 						component={() => <Blog retrieveFrom={firebaseWIUT} />}
 					/>
+
 					<Route
 						exact
 						path="/blog/codechallenges"
 						component={() => <Blog retrieveFrom={firebaseCodeChallenges} />}
 					/>
+
 					<Route exact path="/aboutme" component={AboutMe} />
+
 					<Redirect from="*" to="/" />
 				</Switch>
 			</React.Fragment>
