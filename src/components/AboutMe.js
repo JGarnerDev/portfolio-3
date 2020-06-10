@@ -57,7 +57,7 @@ export default function AboutMe() {
 					</svg>
 					<p className="hobby-text">
 						<strong>Literature</strong> <br />
-						(Sci-fi, Fanstasy, Classics, Philosophy)
+						(Sci-fi, Fantasy, Classics, Philosophy)
 					</p>
 				</div>
 				<div className="hobby">
