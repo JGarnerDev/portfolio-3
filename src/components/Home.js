@@ -14,14 +14,14 @@ export default function Home() {
 					<img id="me" src={picture} alt="" />
 					<div className="social-container">
 						<a
-							href="https://www.linkedin.com/in/jeffrey-garner-882851104/"
+							href="https://github.com/JGarnerDev"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<img src={githubLogo} alt="" />
 						</a>
 						<a
-							href="https://github.com/JGarnerDev"
+							href="https://www.linkedin.com/in/jeffrey-garner-882851104/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
