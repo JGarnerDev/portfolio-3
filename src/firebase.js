@@ -38,12 +38,11 @@ today = mm + "/" + dd + "/" + yyyy;
 // 		"",
 // 	]
 // }
-
 // ];
 
-// codeChallenges.forEach((codeChallenge) => {
-// 	firebaseDB.ref("codeChallenges").push(codeChallenge);
-// });
+// codeChallenges.forEach(codeChallenge => {
+//   firebaseDB.ref('codeChallenges').push(codeChallenge)
+// })
 
 // Blog post model:
 
