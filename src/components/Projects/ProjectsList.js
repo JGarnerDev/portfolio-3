@@ -47,9 +47,9 @@ export default class ProjectsList extends Component {
 					backgroundRepeat: "no-repeat",
 					backgroundSize: "auto 80% ",
 					flexGrow: 2,
-					height: "300px",
-					marginTop: "15%",
-					padding: "0px 20% 0px 20%",
+					height: "500px",
+					width: "90vw",
+					padding: "5%",
 				};
 				let projectLink = `/projects/${project.name}`;
 				if (projects.length === 1) {

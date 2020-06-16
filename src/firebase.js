@@ -65,6 +65,25 @@ today = mm + "/" + dd + "/" + yyyy;
 // 	firebaseDB.ref("wiut").push(blogpost);
 // });
 
+// let projects = [
+// 	{
+// 		name: "WeatherMeThis Weather App",
+// 		date: today,
+// 		id: 5,
+// 		keywords: "React Node API SASS JavaScript",
+// 		img: "https://i.imgur.com/zWmyyiL.png",
+// 		gitlink: "https://github.com/JGarnerDev/weather-app",
+// 		link: "https://weathermethis.netlify.app/",
+// 		desc:
+// 			"A React weather app with API calls and SASS, brings the forecast and flags bad weather.",
+// 		review: "",
+// 	},
+// ];
+
+// projects.forEach((project) => {
+// 	firebaseDB.ref("projects").push(project);
+// });
+
 export {
 	firebase,
 	firebaseDB,
