@@ -39,17 +39,19 @@ export default class ProjectsList extends Component {
 					backgroundSize: "auto 80% ",
 					flexGrow: 2,
 					height: "300px",
-					padding: "0px 150px 0px 150px",
+					paddingLeft: "5%",
+					paddingRight: "5%",
 				};
 				let projectLonelyStyle = {
 					backgroundImage: `url(${project.img})`,
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
-					backgroundSize: "auto 80% ",
+					backgroundSize: "auto 70% ",
 					flexGrow: 2,
-					height: "500px",
+					height: "300px",
 					width: "90vw",
-					padding: "5%",
+					paddingLeft: "5%",
+					paddingRight: "5%",
 				};
 				let projectLink = `/projects/${project.name}`;
 				if (projects.length === 1) {

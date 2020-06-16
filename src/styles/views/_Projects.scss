@@ -9,7 +9,8 @@
         flex-wrap: wrap-reverse;
         justify-content: flex-start;
         margin-top: 20px;
-        max-width: 90%;
+        width: 90%;
+        max-width: 1000px;
         background-color: $primary-color-darker;
         background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
         border-radius: 20px;
@@ -18,7 +19,6 @@
         -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
         @media (max-width: $breakpoint-md) {
-            padding-bottom: 100px;
             width: 95%;
         }
         .project {
