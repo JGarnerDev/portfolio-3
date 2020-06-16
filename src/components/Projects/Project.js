@@ -92,7 +92,10 @@ class Project extends Component {
 						<div id="viewProject-text">
 							<div id="desc">{project.desc}</div>
 							<hr />
-							<div id="review">{project.review}</div>
+							<div
+								id="review"
+								dangerouslySetInnerHTML={{ __html: project.review }}
+							></div>
 						</div>
 					);
 				}
