@@ -84,10 +84,10 @@ today = mm + "/" + dd + "/" + yyyy;
 //   firebaseDB.ref('projects').push(project)
 // })
 
-// export {
-//   firebase,
-//   firebaseDB,
-//   firebaseProjects,
-//   firebaseCodeChallenges,
-//   firebaseWIUT
-// }
+export {
+	firebase,
+	firebaseDB,
+	firebaseProjects,
+	firebaseCodeChallenges,
+	firebaseWIUT,
+};
