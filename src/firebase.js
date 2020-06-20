@@ -49,45 +49,45 @@ today = mm + "/" + dd + "/" + yyyy;
 // FOR WIUT BLOG POST
 
 // let wiut = [
-// 	{
-// 		name: "Offering my services to an adapting business",
-// 		date: today,
-// 		keywords: "PHP Wordpress",
-// 		content: [
-// 			"https://i.imgur.com/p8NVOA6.png",
-// 			"https://i.imgur.com/Y2wRglB.png",
-// 			"",
-// 		],
-// 	},
-// ];
+//   {
+//     name: 'Finished! - Making a WordPress Theme and Site for a Friend',
+//     date: today,
+//     keywords: 'WordPress PHP SASS Lavarel-Mix',
+//     content: [
+//       'https://i.imgur.com/JfSd8gc.png',
+//       'https://i.imgur.com/Y6d4RGw.png',
+//       "<p>The major work is finished! </p><p>After a few trials and tribulations with how WordPress’s backend handles and prioritizes scripts, getting cozy with PHP, and integrating SASS, the major development involved in making my friend’s tutoring website is done! </p><p>It was fairly challenging, but well worth the reading of documentation and sorting out the good tutorials from the bad. I’m pretty jazzed that I’ve encountered enough odd bugs to have a pretty good understanding of how things work. Furthermore, it’s a great feeling to help out for a good cause. </p><p>Feel free to <a href='http://theconfidentlearner.com'>check it out!</a></p>"
+//     ]
+//   }
+// ]
 
-// wiut.forEach((blogpost) => {
-// 	firebaseDB.ref("wiut").push(blogpost);
-// });
+// wiut.forEach(blogpost => {
+//   firebaseDB.ref('wiut').push(blogpost)
+// })
 
 // let projects = [
-// 	{
-// 		name: "WeatherMeThis Weather App",
-// 		date: today,
-// 		id: 5,
-// 		keywords: "React Node API SASS JavaScript",
-// 		img: "https://i.imgur.com/zWmyyiL.png",
-// 		gitlink: "https://github.com/JGarnerDev/weather-app",
-// 		link: "https://weathermethis.netlify.app/",
-// 		desc:
-// 			"A React weather app with API calls and SASS, brings the forecast and flags bad weather.",
-// 		review: "",
-// 	},
-// ];
+//   {
+//     name: 'The Condident Learner',
+//     date: today,
+//     id: 6,
+//     keywords: 'React Node API SASS JavaScript',
+//     img: 'https://i.imgur.com/JfSd8gc.png',
+//     gitlink: 'https://github.com/JGarnerDev/TheConfidentLearner',
+//     link: 'https://theconfidentlearner.com/',
+//     desc:
+//       'A volunteer WordPress theme and website for a early-education tutor.',
+//     review: ''
+//   }
+// ]
 
-// projects.forEach((project) => {
-// 	firebaseDB.ref("projects").push(project);
-// });
+// projects.forEach(project => {
+//   firebaseDB.ref('projects').push(project)
+// })
 
-export {
-	firebase,
-	firebaseDB,
-	firebaseProjects,
-	firebaseCodeChallenges,
-	firebaseWIUT,
-};
+// export {
+//   firebase,
+//   firebaseDB,
+//   firebaseProjects,
+//   firebaseCodeChallenges,
+//   firebaseWIUT
+// }

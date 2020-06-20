@@ -28,7 +28,7 @@ export default class ProjectsList extends Component {
 					backgroundImage: `url(${project.img})`,
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
-					backgroundSize: "auto 80% ",
+					backgroundSize: "auto 70% ",
 					flexGrow: 1,
 					height: "300px",
 				};
@@ -36,7 +36,7 @@ export default class ProjectsList extends Component {
 					backgroundImage: `url(${project.img})`,
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
-					backgroundSize: "auto 80% ",
+					backgroundSize: "auto 70% ",
 					flexGrow: 2,
 					height: "300px",
 					paddingLeft: "5%",
