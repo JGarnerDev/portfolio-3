@@ -11,7 +11,6 @@
         margin-bottom: 10px;
         max-width: 1000px;
         padding: 5px 5px 20px 5px;
-        text-align: center;
         background: white;
         outline: 1px solid black;
         .blogpost-header {
@@ -37,7 +36,7 @@
             }
         }
         .blogpost-text {
-            margin: 5px;
+            margin: 20px;
             word-wrap: break-word;
         }
         .img-wrapper {
@@ -46,13 +45,11 @@
             align-items: center;
             height: 60vh;
             width: 100%;
-            @media (max-width: $breakpoint-md) {
-                height: 45vh;
-            }
         }
         .blog-img {
-            height: 90%;
+            max-height: 60vh;
             width: auto;
+            max-width: 80vw;
         }
         h3 {
             margin: 0;
