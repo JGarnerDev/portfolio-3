@@ -55,7 +55,7 @@ export default function Home() {
 						done so far!
 					</p>
 					<p>
-						Also, feel free to contact me at{" "}
+						Feel free to contact me at{" "}
 						<a href="mailto:j.garner200@gmail.com">j.garner200@gmail.com</a>
 					</p>
 				</div>
