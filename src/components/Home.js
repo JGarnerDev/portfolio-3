@@ -43,16 +43,20 @@ export default function Home() {
 					<h6>• PHP • SQL • NoSQL •</h6>
 
 					<p>
-						Welcome to my portfolio! I've been coding since 2019 mainly in
-						JavaScript and React, but I have an energetic passion for computer
-						science that draws me to explore several other programming concepts,
-						languages, supersets, and frameworks.{" "}
+						Welcome! I've been coding since 2019 mainly in JavaScript and React,
+						but I have an energetic passion for computer science that draws me
+						to explore several other programming concepts, languages, supersets,
+						and frameworks.
 					</p>
 					<a href={resume}>Here's my resume!</a>
 					<p>
-						Take a look at the <Link to="/projects">projects</Link> or the{" "}
+						Take a look at the <Link to="/projects">projects</Link> or the
 						<Link to="/blog/codechallenges"> programming challenges</Link> I've
 						done so far!
+					</p>
+					<p>
+						Also, feel free to contact me at{" "}
+						<a href="mailto:j.garner200@gmail.com">j.garner200@gmail.com</a>
 					</p>
 				</div>
 			</section>
